@@ -1,0 +1,7 @@
+.vscode/
+.idea/
+*.iml
+app/node_modules/
+resources/
+materials
+*.DS_Store
