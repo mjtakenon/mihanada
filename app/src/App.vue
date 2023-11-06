@@ -1,30 +1,37 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-    <HelloWorld msg="Vite + Vue" />
+    <Hero></Hero>
+    <News></News>
+    <Discography></Discography>
+    <Member></Member>
+    <Footer></Footer>
   </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<script lang="ts">
+import {defineComponent} from 'vue'
+import Hero from './components/hero/Hero.vue'
+import News from './components/news/News.vue'
+import Discography from './components/discography/Discography.vue'
+import Member from './components/member/Member.vue'
+import Footer from './components/footer/Footer.vue'
+
+export default defineComponent({
+  components: {
+    Hero,
+    News,
+    Discography,
+    Member,
+    Footer,
+  },
+  setup() {
+  },
+  computed: {
+  },
+  props: {
+  }
+})
+</script>
+
+<style scoped lang="scss">
 </style>
