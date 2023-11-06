@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="hero_logo" src="../../assets/hero_logo.svg" alt="ロゴ">
+<!--    <img class="hero_logo" src="../../assets/hero_logo.svg" alt="ロゴ">-->
   </div>
 </template>
 
