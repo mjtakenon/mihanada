@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <HeroVideo></HeroVideo>
-    <HeroLogo></HeroLogo>
+    <HeroLogo class="hero_logo"></HeroLogo>
   </div>
 </template>
 
@@ -26,5 +26,9 @@ export default defineComponent({
 
 .hero {
   background-color: color.$mihanada;
+}
+
+.hero_logo {
+  @apply absolute top-0;
 }
 </style>
