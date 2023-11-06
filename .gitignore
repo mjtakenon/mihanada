@@ -3,5 +3,5 @@
 *.iml
 app/node_modules/
 resources/
-materials
+materials/
 *.DS_Store
