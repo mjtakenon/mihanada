@@ -1,7 +1,8 @@
 <template>
   <div class="hero">
     <HeroVideo></HeroVideo>
-    <HeroLogo class="hero_logo"></HeroLogo>
+    <HeroLogo></HeroLogo>
+    <HeroArrow></HeroArrow>
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 import {defineComponent} from 'vue'
 import HeroVideo from './HeroVideo.vue'
 import HeroLogo from "./HeroLogo.vue";
+import HeroArrow from "./HeroArrow.vue";
 
 export default defineComponent({
   components: {
     HeroVideo,
     HeroLogo,
+    HeroArrow,
   },
   setup() {},
   computed: {},
@@ -28,7 +31,4 @@ export default defineComponent({
   background-color: color.$mihanada;
 }
 
-.hero_logo {
-  @apply absolute top-0;
-}
 </style>
