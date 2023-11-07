@@ -5,7 +5,7 @@
         <span class="arrow_text">scroll</span>
       </div>
       <div>
-        <font-awesome-icon class="arrow_icon" :icon="['fas', 'angles-down', 'solid']" />
+        <Icon class="arrow_icon" icon="material-symbols-light:more-down" />
       </div>
     </div>
   </div>
@@ -25,23 +25,21 @@ export default defineComponent({
 
 @use "../../styles/color";
 
-.hero_arrow {
-  //@apply w-full;
-}
-
 .arrow_container {
   text-align: center;
   color: color.$background;
   @apply w-4/5 md:w-2/5 max-h-[50lvh] absolute;
 
-  @apply left-[10lvw] md:left-[30lvw] bottom-[5lvh] sm:bottom-[2lvh];
+  @apply left-[10lvw] md:left-[30lvw] bottom-[5lvh] sm:bottom-[3lvh] md:bottom-[2lvh];
 }
 
 .arrow_text {
-  @apply text-base sm:text-xl;
+  @apply text-base sm:text-lg md:text-xl;
 }
 
 .arrow_icon {
-  @apply w-full h-4 sm:h-[4lvh] max-h-[10lvh];
+  @apply w-full h-8 sm:h-[4lvh] md:h-[6lvh] min-h-[20px];
+  @apply sm:mt-[-4px] md:mt-[-2px] mt-0;
+  @apply rotate-[-45deg];
 }
 </style>
