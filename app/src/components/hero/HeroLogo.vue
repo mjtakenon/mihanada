@@ -21,7 +21,8 @@ export default defineComponent({
 }
 
 .logo {
-  @apply w-4/5 md:w-2/5 absolute;
-  @apply left-[8vw] md:left-[28vw] top-[25vh];
+  @apply w-4/5 md:w-2/5 max-h-[50lvh] absolute;
+
+  @apply left-[8lvw] md:left-[28lvw] top-[25lvh];
 }
 </style>
