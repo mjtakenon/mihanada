@@ -9,7 +9,6 @@ export default defineComponent({
   components: {},
   setup() {},
   computed: {},
-  props: {},
 })
 </script>
 

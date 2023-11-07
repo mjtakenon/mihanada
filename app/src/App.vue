@@ -28,8 +28,6 @@ export default defineComponent({
   },
   computed: {
   },
-  props: {
-  }
 })
 </script>
 

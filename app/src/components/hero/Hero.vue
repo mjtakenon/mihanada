@@ -20,7 +20,6 @@ export default defineComponent({
   },
   setup() {},
   computed: {},
-  props: {},
 })
 </script>
 
