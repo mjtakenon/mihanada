@@ -30,7 +30,7 @@ export default defineComponent({
   color: color.$background;
   @apply w-4/5 md:w-2/5 max-h-[50lvh] absolute;
 
-  @apply left-[10lvw] md:left-[30lvw] bottom-[5lvh] sm:bottom-[3lvh] md:bottom-[2lvh];
+  @apply left-[10lvw] md:left-[30lvw] bottom-[5lvh] sm:bottom-[4lvh] md:bottom-[2lvh];
 }
 
 .arrow_text {
