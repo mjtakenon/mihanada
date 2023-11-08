@@ -18,13 +18,13 @@ export default defineComponent({
 @use "../../styles/color";
 
 .news_text {
-  @apply text-4xl sm:text-5xl md:text-5xl;
+  @apply text-4xl sm:text-5xl xl:text-5xl;
   @apply font-black;
   color: color.$mihanada;
 }
 
 .first_letter {
-  @apply text-5xl sm:text-6xl md:text-7xl;
+  @apply text-5xl sm:text-6xl xl:text-7xl;
 }
 
 </style>

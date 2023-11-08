@@ -21,13 +21,13 @@ export default defineComponent({
 @use "../../styles/color";
 
 .news_container {
-  @apply w-[80rem];
+  @apply w-full sm:w-[80%] xl:w-[60%];
   @apply my-10 sm:my-14;
   @apply p-4 sm:p-8;
   background-color: color.$background;
-  @apply shadow-[0_14px_0_0_#64B6CA] xl:shadow-[14px_14px_0_0_#64B6CA];
+  @apply shadow-[0_14px_0_0_#64B6CA] sm:shadow-[14px_14px_0_0_#64B6CA];
   //@apply shadow-[14px_14px_0_0_color:var(color.$mihanada-dark-1)];
-  @apply xl:rounded-2xl;
+  @apply sm:rounded-2xl;
 }
 
 </style>
