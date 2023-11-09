@@ -2,6 +2,7 @@
   <div class="member">
     <MemberJoint></MemberJoint>
     <MemberText></MemberText>
+    <MemberContainer></MemberContainer>
   </div>
 </template>
 
@@ -9,9 +10,10 @@
 import {defineComponent} from 'vue'
 import MemberJoint from "./MemberJoint.vue";
 import MemberText from "./MemberText.vue";
+import MemberContainer from "./MemberContainer.vue";
 
 export default defineComponent({
-  components: {MemberText, MemberJoint},
+  components: {MemberContainer, MemberText, MemberJoint},
   setup() {},
   computed: {},
 })

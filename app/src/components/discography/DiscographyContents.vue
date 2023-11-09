@@ -7,7 +7,7 @@
     <div class="title">{{ title }}</div>
     <div class="description">{{ description }}</div>
     <div class="links">
-      <div v-for="(link, idx) of links.reverse()">
+      <div v-for="link of links.reverse()">
         <a :href="link.url"><Icon :class="linkClass(link)" :icon="link.icon"></Icon></a>
       </div>
     </div>
