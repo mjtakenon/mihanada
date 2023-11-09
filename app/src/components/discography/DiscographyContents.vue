@@ -2,11 +2,7 @@
   <div class="discography_contents">
     <img class="image" :src="imagePath" alt="">
     <div class="no">
-      <span v-if="no===1">{{ no }}st</span>
-      <span v-else-if="no===2">{{ no }}nd</span>
-      <span v-else-if="no===3">{{ no }}rd</span>
-      <span v-else>{{ no }}th</span>
-      Album
+      {{no}}{{albumOrdinalNumber(no)}} Album
     </div>
     <div class="title">{{ title }}</div>
     <div class="description">{{ description }}</div>
@@ -27,6 +23,19 @@ export default defineComponent({
   components: {},
   setup() {},
   computed: {
+    albumOrdinalNumber() {
+      return (num: Number) => {
+        if (num % 100 >= 10 && num % 100 < 20) {
+          return "th"
+        }
+        switch (num % 10) {
+          case 1: return "st"
+          case 2: return "nd"
+          case 3: return "rd"
+          default: return "th"
+        }
+      }
+    },
     linkClass() {
       return (link: Link) => { return {
         'link': true,
@@ -84,7 +93,6 @@ export default defineComponent({
     line-height: 1.3;
   }
 }
-
 
 .image {
   @apply mb-2;
