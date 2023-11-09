@@ -1,15 +1,17 @@
 <template>
   <div class="member">
     <MemberJoint></MemberJoint>
+    <MemberText></MemberText>
   </div>
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue'
 import MemberJoint from "./MemberJoint.vue";
+import MemberText from "./MemberText.vue";
 
 export default defineComponent({
-  components: {MemberJoint},
+  components: {MemberText, MemberJoint},
   setup() {},
   computed: {},
 })
