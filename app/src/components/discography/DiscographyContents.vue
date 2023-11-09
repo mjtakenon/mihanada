@@ -138,7 +138,7 @@ export default defineComponent({
 .eventName {
   @apply ml-2 mr-0;
   @apply text-xs text-right;
-  color: color.$mihanada-dark-2;
+  color: color.$mihanada-dark-1;
 }
 
 </style>
