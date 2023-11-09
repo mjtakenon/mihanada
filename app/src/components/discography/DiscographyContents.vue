@@ -122,7 +122,7 @@ export default defineComponent({
 
 .links {
   @apply flex flex-row-reverse flex-wrap-reverse;
-  @apply h-6;
+  @apply h-6 mb-1;
 }
 
 .link {

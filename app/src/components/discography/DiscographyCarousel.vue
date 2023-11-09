@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue'
+import {defineComponent, ref} from 'vue'
 import DiscographyText from "./DiscographyText.vue";
 import DiscographyContents from "./DiscographyContents.vue";
 
@@ -31,15 +31,11 @@ export default defineComponent({
     this.updateItemsToShow()
     window.addEventListener('resize', this.updateItemsToShow)
   },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.updateItemsToShow);
-  },
   methods: {
     updateItemsToShow() {
       this.itemsToShow = Math.min((window.innerWidth-330)/(1280-330)*2.3 + 1.2, 3.5)
     }
-  },// 330=1.2, 1280-3.5
-  computed: {},
+  },
   data() {
     return {
       itemsToShow: 3.5,
