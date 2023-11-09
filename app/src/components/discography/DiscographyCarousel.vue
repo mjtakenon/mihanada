@@ -1,10 +1,15 @@
 <template>
   <div class="discography_carousel">
-    <carousel :items-to-show="2" :wrap-around="true">
-      <slide v-for="slide in 4" :key="slide">
-        <div style="height:100px; width:100px; background-color:white;">
-          {{ slide }}
-        </div>
+    <carousel :items-to-show="itemsToShow" :wrap-around="true">
+      <slide v-for="content in contents" :key="content.no">
+        <DiscographyContents
+            :no="content.no"
+            :title="content.title"
+            :description="content.description"
+            :imagePath="content.imagePath"
+            :eventName="content.eventName"
+            :links="content.links"
+        ></DiscographyContents>
       </slide>
 
       <template #addons>
@@ -18,20 +23,58 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
 import DiscographyText from "./DiscographyText.vue";
+import DiscographyContents from "./DiscographyContents.vue";
 
 export default defineComponent({
-  components: {DiscographyText},
-  setup() {},
+  components: { DiscographyContents, DiscographyText },
+  mounted() {
+    this.updateItemsToShow()
+    window.addEventListener('resize', this.updateItemsToShow)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.updateItemsToShow);
+  },
+  methods: {
+    updateItemsToShow() {
+      this.itemsToShow = Math.min((window.innerWidth-330)/(1280-330)*2.3 + 1.2, 3.5)
+    }
+  },// 330=1.2, 1280-3.5
   computed: {},
+  data() {
+    return {
+      itemsToShow: 3.5,
+      contents: [
+        {
+          no: 4, title: "花髪のロラ", description: "人は花に魅せられる話。", imagePath: "src/assets/lora_jacket.png", eventName: "THE VOC@LOiD M@STER53", links: []
+        }, {
+          no: 3, title: "夜明け、駅前。", description: "駅前で待つ朝の話。", imagePath: "src/assets/yoakeekimae_jacket.png", eventName: "M3-2022秋", links: [
+            { icon: "mdi:youtube", url: "https://youtu.be/l61YwjHrTIM" },
+            { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm41297466" },
+            { icon: "mdi:cart", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1684364" },
+          ]
+        }, {
+          no: 2, title: "藍譚", description: "夏に残した燈の話。", imagePath: "src/assets/lantern_jacket.png", eventName: "M3-2021秋", links: [
+            { icon: "mdi:youtube", url: "https://youtu.be/ACK8eofMkrs" },
+            { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm39527910" },
+            { icon: "mdi:cart", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1684364" },
+          ]
+        }, {
+          no: 1, title: "雪狼", description: "", imagePath: "src/assets/setsuro_jacket.png", eventName: "M3-2020秋", links: [
+            { icon: "mdi:youtube", url: "https://youtu.be/JdW1aMtQHHE" },
+            { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm37711126" },
+            { icon: "mdi:cart", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1684364" },
+          ]
+        }, {
+          no: 0, title: "僕らの飛行計画", description: "", imagePath: "src/assets/hikoukeikaku_jacket.png", eventName: "M3-2019春", links: []
+        },
+      ]
+    }
+  },
 })
 </script>
 
 <style scoped lang="scss">
 @use "../../styles/color";
-
-.discography_joint {
-
-}
 
 .joint_parallelogram {
   @apply w-full h-16 sm:h-24 xl:h-32;
