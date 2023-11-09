@@ -2,6 +2,7 @@
   <div class="discography">
     <DiscographyJoint></DiscographyJoint>
     <DiscographyText></DiscographyText>
+    <DiscographyCarousel></DiscographyCarousel>
   </div>
 </template>
 
@@ -9,9 +10,10 @@
 import {defineComponent} from 'vue'
 import DiscographyText from "./DiscographyText.vue";
 import DiscographyJoint from "./DiscographyJoint.vue";
+import DiscographyCarousel from "./DiscographyCarousel.vue";
 
 export default defineComponent({
-  components: {DiscographyJoint, DiscographyText},
+  components: {DiscographyCarousel, DiscographyJoint, DiscographyText},
   setup() {},
   computed: {},
 })

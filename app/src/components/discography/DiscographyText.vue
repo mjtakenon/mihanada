@@ -16,7 +16,7 @@ export default defineComponent({
 @use "../../styles/color";
 
 .discography_text {
-  @apply sm:mx-16 sm:pb-16 pb-8 text-center sm:text-left;
+  @apply sm:mx-20 sm:pb-16 pb-8 text-center sm:text-left;
   @apply text-5xl sm:text-6xl xl:text-7xl;
   color: color.$mihanada-dark-1;
   -webkit-text-stroke: 3px color.$background;
