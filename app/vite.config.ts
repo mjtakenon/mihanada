@@ -25,9 +25,13 @@ export default ({mode}) => {
           usePolling: true,
       },
     },
+    preview: {
+      port: viteEnv.VITE_SERVER_PORT,
+    },
     build: {
         outDir: 'public/build/', // ビルド成果物の生成先
-        manifest: true
+        manifest: true,
     },
+    base: './',
   })
 }
