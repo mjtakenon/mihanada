@@ -83,11 +83,12 @@ export default defineComponent({
 
 .discography_contents {
   @apply max-w-lg;
-  @apply mx-5 px-5 pt-5 pb-2;
+  @apply mx-5 px-5 pt-5 pb-2 mb-2;
   @apply rounded-2xl;
   background-color: color.$background;
 
   @apply text-left;
+  @apply shadow-md;
 
   > div {
     line-height: 1.3;

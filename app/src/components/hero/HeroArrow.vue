@@ -35,6 +35,8 @@ export default defineComponent({
 
 .arrow_text {
   @apply text-base sm:text-lg md:text-xl;
+  font-family: 'Inter', sans-serif;
+  @apply font-medium sm:font-black;
 }
 
 .arrow_icon {
