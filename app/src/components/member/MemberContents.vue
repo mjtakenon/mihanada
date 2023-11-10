@@ -1,15 +1,21 @@
 <template>
   <div class="member_contents">
-    <MemberIcon class="icon" :image-path="imagePath"></MemberIcon>
-    <MemberName class="texts"
-      :name="name"
-      :id="id"
-      :bio="bio"
-    ></MemberName>
-    <div class="links">
-      <div v-for="link of links.reverse()">
-        <a :href="link.url"><Icon :class="linkClass(link)" :icon="link.icon"></Icon></a>
-      </div>
+    <div class="member_contents_flex">
+      <MemberIcon
+        class="icon"
+        :image-path="imagePath"
+      ></MemberIcon>
+      <MemberName
+        class="texts"
+        :name="name"
+        :id="id"
+        :bio="bio"
+        :links="links"
+      ></MemberName>
+      <MemberLinks
+        class="links"
+        :links="links"
+      ></MemberLinks>
     </div>
   </div>
 </template>
@@ -19,18 +25,12 @@ import {defineComponent, PropType} from 'vue'
 import {Link} from "../../scripts/entity/Link.ts";
 import MemberIcon from "./MemberIcon.vue";
 import MemberName from "./MemberName.vue";
+import MemberLinks from "./MemberLinks.vue";
 
 export default defineComponent({
-  components: {MemberName, MemberIcon},
+  components: {MemberName, MemberIcon, MemberLinks},
   setup() {},
-  computed: {
-    linkClass() {
-      return (link: Link) => { return {
-        'link': true,
-        'niconico': link.icon === 'simple-icons:niconico',
-      }}
-    }
-  },
+  computed: {},
   props: {
     id: {
       require: true,
@@ -61,7 +61,7 @@ export default defineComponent({
       require: true,
       default: [],
       type: Array as PropType<Link[]>
-    }
+    },
   },
 })
 </script>
@@ -69,7 +69,7 @@ export default defineComponent({
 <style scoped lang="scss">
 @use "../../styles/color";
 
-.member_contents {
+.member_contents_flex {
   @apply flex;
   align-items: center;
 }
@@ -80,14 +80,12 @@ export default defineComponent({
 
 .texts {
   @apply flex-auto;
-  @apply w-32 sm:w-48 xl:w-96 max-w-[400px];
+  @apply w-32 sm:w-48 md:w-64 xl:w-96;
   @apply mx-5 sm:mx-10;
 }
 
 .links {
-  @apply sm:w-16;
-  @apply flex;
-  @apply h-6 mb-1;
+  @apply hidden lg:flex;
 }
 
 </style>

@@ -6,14 +6,20 @@
     </div>
     <div class="line"></div>
     <div class="bio">{{ bio }}</div>
+    <MemberLinks
+      class="links"
+      :links="links"
+    ></MemberLinks>
   </div>
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue'
+import {defineComponent, PropType} from 'vue'
+import {Link} from "../../scripts/entity/Link.ts";
+import MemberLinks from "./MemberLinks.vue";
 
 export default defineComponent({
-  components: {},
+  components: {MemberLinks},
   setup() {},
   computed: {},
   props: {
@@ -31,6 +37,11 @@ export default defineComponent({
       require: true,
       default: "",
       type: String,
+    },
+    links: {
+      require: true,
+      default: [],
+      type: Array as PropType<Link[]>
     },
   },
 })
@@ -67,6 +78,10 @@ export default defineComponent({
   @apply m-2 sm:m-3 xl:m-4;
   @apply text-xs sm:text-sm xl:text-base;
   color: color.$text-black;
+}
+
+.links {
+  @apply lg:hidden;
 }
 
 </style>

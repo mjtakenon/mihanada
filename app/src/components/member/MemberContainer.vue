@@ -40,7 +40,7 @@ export default defineComponent({
           ]
         },
         {
-          id: "@SND_50Y0", name: "SND", bio: "自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介", imagePath: "src/assets/member_snd.jpg", links: [
+          id: "@SND_50Y0", name: "SND", bio: "歌詞書いてます。", imagePath: "src/assets/member_snd.png", links: [
             { icon: "simple-icons:x", url: "https://twitter.com/SND_50Y0" },
             { icon: "mdi:twitch", url: "https://www.twitch.tv/inubeco"},
           ]
@@ -54,13 +54,15 @@ export default defineComponent({
 <style scoped lang="scss">
 
 .member_contents {
-  @apply mx-6 sm:mx-12 md:mx-24 lg:mx-32 xl:mx-64 my-5 sm:my-10 xl:my-20
+  @apply min-w-[300px] w-[85%] sm:w-[500px] md:w-[600px] lg:w-[800px] xl:w-[1000px];
+  @apply my-5 sm:my-10 xl:my-20;
+  @apply mx-auto;
 }
 .even_member {
-  @apply mr-12 sm:mr-[128px] md:mr-[192px] lg:mr-[256px] xl:mr-[384px];
+  @apply pr-[7%] sm:pr-[50px] md:pr-[60px] lg:pr-[80px] xl:pr-[100px];
 }
 .odd_member {
-  @apply ml-12 sm:ml-[128px] md:ml-[192px] lg:ml-[256px] xl:ml-[384px];
+  @apply pl-[7%] sm:pl-[50px] md:pl-[60px] lg:pl-[80px] xl:pl-[100px];
 }
 
 </style>
