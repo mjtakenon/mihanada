@@ -24,7 +24,7 @@ export default defineComponent({
   setup() {},
   computed: {
     albumOrdinalNumber() {
-      return (num: Number) => {
+      return (num: number) => {
         if (num % 100 >= 10 && num % 100 < 20) {
           return "th"
         }
