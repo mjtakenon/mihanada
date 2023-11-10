@@ -56,7 +56,7 @@ export default defineComponent({
 .member_contents {
   @apply min-w-[300px] w-[85%] sm:w-[500px] md:w-[600px] lg:w-[800px] xl:w-[1000px];
   @apply my-5 sm:my-10 xl:my-20;
-  @apply mx-auto;
+  @apply mx-auto pl-1;
 }
 .even_member {
   @apply pr-[7%] sm:pr-[50px] md:pr-[60px] lg:pr-[80px] xl:pr-[100px];
