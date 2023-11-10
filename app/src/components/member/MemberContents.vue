@@ -1,11 +1,11 @@
 <template>
   <div class="member_contents">
     <MemberIcon class="icon" :image-path="imagePath"></MemberIcon>
-    <div class="texts">
-      <div class="name">{{ name }}</div>
-      <div class="id">{{ id }}</div>
-      <div class="bio">{{ bio }}</div>
-    </div>
+    <MemberName class="texts"
+      :name="name"
+      :id="id"
+      :bio="bio"
+    ></MemberName>
     <div class="links">
       <div v-for="link of links.reverse()">
         <a :href="link.url"><Icon :class="linkClass(link)" :icon="link.icon"></Icon></a>
@@ -18,9 +18,10 @@
 import {defineComponent, PropType} from 'vue'
 import {Link} from "../../scripts/entity/Link.ts";
 import MemberIcon from "./MemberIcon.vue";
+import MemberName from "./MemberName.vue";
 
 export default defineComponent({
-  components: {MemberIcon},
+  components: {MemberName, MemberIcon},
   setup() {},
   computed: {
     linkClass() {
@@ -74,12 +75,12 @@ export default defineComponent({
 }
 
 .icon {
-  @apply w-32 sm:w-48 xl:w-64;
+  @apply w-24 sm:w-32 md:w-48 xl:w-64;
 }
 
 .texts {
   @apply flex-auto;
-  @apply w-32 sm:w-48 xl:w-96;
+  @apply w-32 sm:w-48 xl:w-96 max-w-[400px];
   @apply mx-5 sm:mx-10;
 }
 

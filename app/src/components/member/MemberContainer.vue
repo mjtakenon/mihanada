@@ -33,7 +33,7 @@ export default defineComponent({
     return {
       members: [
         {
-          id: "@mjtakenon", name: "ﾃｲｸﾉﾝ", bio: "自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介", imagePath: "src/assets/member_mjtakenon.png", links: [
+          id: "@mjtakenon", name: "ﾃｲｸﾉﾝ", bio: "曲作ってます。", imagePath: "src/assets/member_mjtakenon.png", links: [
             { icon: "simple-icons:x", url: "https://twitter.com/mjtakenon" },
             { icon: "mdi:youtube", url: "https://www.youtube.com/@mjtakenon" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/my/mylist/57471605" },
@@ -52,8 +52,9 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+
 .member_contents {
-  @apply mx-5 sm:mx-12 md:mx-24 lg:mx-32 xl:mx-64 my-5 sm:my-10 xl:my-20
+  @apply mx-6 sm:mx-12 md:mx-24 lg:mx-32 xl:mx-64 my-5 sm:my-10 xl:my-20
 }
 .even_member {
   @apply mr-12 sm:mr-[128px] md:mr-[192px] lg:mr-[256px] xl:mr-[384px];
