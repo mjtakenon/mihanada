@@ -32,10 +32,13 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@use "../../styles/color";
+
 .news_article {
   @apply my-2;
   @apply flex;
   @apply text-sm sm:text-base xl:text-lg;
+  color: color.$text-black;
 }
 
 .news_date {

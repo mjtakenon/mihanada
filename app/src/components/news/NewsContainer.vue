@@ -23,8 +23,8 @@ export default defineComponent({
   data() {
     return {
       newsArticles: [
-        { date: new Date("2023/11/14"), contents: "THE VOC@LOiD M@STER53に参加します！新譜「花髪のロラ」頒布予定です。スペースE44でお待ちしています！" },
-        { date: new Date("2023/11/13"), contents: "公式サイトを作成しました！" },
+        { date: new Date("2023/11/12"), contents: "THE VOC@LOiD M@STER53に参加します！新譜「花髪のロラ」頒布予定です。スペースE44でお待ちしています！" },
+        { date: new Date("2023/11/12"), contents: "公式サイトを作成しました！" },
       ]
     }
   }

@@ -42,7 +42,7 @@ export default defineComponent({
 
 .link {
   @apply w-8 h-8 sm:w-12 sm:h-12 lg:w-14 lg:h-14;
-  @apply mx-2;
+  @apply mx-2 sm:mx-3 lg:mx-4;
   color: color.$background;
 }
 
