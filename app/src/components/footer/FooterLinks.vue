@@ -1,7 +1,7 @@
 <template>
   <div class="footer_links">
     <div v-for="link of Array.from(links).reverse()">
-      <a :href="link.url"><Icon :class="['link']" :icon="link.icon"></Icon></a>
+      <a :href="link.url"><Icon :class="linkClass(link)" :icon="link.icon"></Icon></a>
     </div>
   </div>
 </template>
