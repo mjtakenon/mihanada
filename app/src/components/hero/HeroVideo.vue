@@ -21,7 +21,7 @@ export default defineComponent({
 
 .video {
   @apply w-full min-h-[100lvh];
-  background: url(/assets/hero_video_mid.gif) center/cover;
+  background: url(/img/hero_video_mid.gif) center/cover;
 }
 
 .overlay {

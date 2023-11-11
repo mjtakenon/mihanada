@@ -29,9 +29,9 @@ export default ({mode}) => {
       port: viteEnv.VITE_SERVER_PORT,
     },
     build: {
-        outDir: 'public/build/', // ビルド成果物の生成先
+        outDir: './dist', // ビルド成果物の生成先
         manifest: true,
     },
-    base: './',
+    base: '/mihanada/',
   })
 }

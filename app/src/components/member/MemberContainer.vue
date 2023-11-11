@@ -16,6 +16,8 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
 import MemberContents from "./MemberContents.vue";
+import memberMjtakenonImg from '../../../src/assets/img/member_mjtakenon.png'
+import memberSndImg from '../../../src/assets/img/member_snd.png'
 
 export default defineComponent({
   components: {MemberContents},
@@ -33,14 +35,14 @@ export default defineComponent({
     return {
       members: [
         {
-          id: "@mjtakenon", name: "ﾃｲｸﾉﾝ", bio: "曲作ってます。", imagePath: "/assets/member_mjtakenon.png", links: [
+          id: "@mjtakenon", name: "ﾃｲｸﾉﾝ", bio: "曲作ってます。", imagePath: memberMjtakenonImg, links: [
             { icon: "simple-icons:x", url: "https://twitter.com/mjtakenon" },
             { icon: "mdi:youtube", url: "https://www.youtube.com/@mjtakenon" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/my/mylist/57471605" },
           ]
         },
         {
-          id: "@SND_50Y0", name: "SND", bio: "歌詞書いてます。", imagePath: "/assets/member_snd.png", links: [
+          id: "@SND_50Y0", name: "SND", bio: "歌詞書いてます。", imagePath: memberSndImg, links: [
             { icon: "simple-icons:x", url: "https://twitter.com/SND_50Y0" },
             { icon: "mdi:twitch", url: "https://www.twitch.tv/inubeco"},
           ]
