@@ -32,6 +32,6 @@ export default ({mode}) => {
         outDir: './dist', // ビルド成果物の生成先
         manifest: true,
     },
-    base: '/mihanada/',
+    base: './', //'/mihanada/',
   })
 }
