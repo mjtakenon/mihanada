@@ -7,9 +7,9 @@
     <div class="title">{{ title }}</div>
     <div class="description">{{ description }}</div>
     <div class="links">
-      <div v-for="link of Array.from(links).reverse()">
+      <template v-for="link of Array.from(links).reverse()">
         <a :href="link.url"><Icon :class="linkClass(link)" :icon="link.icon"></Icon></a>
-      </div>
+      </template>
     </div>
     <div class="eventName">{{ eventName }}</div>
   </div>

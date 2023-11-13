@@ -2,12 +2,12 @@
   <div class="news_container">
     <div class="circle"></div>
     <NewsText class="news_text"></NewsText>
-    <div v-for="(newsArticle, idx) of newsArticles">
-      <div v-if="idx!==0">
+    <template v-for="(newsArticle, idx) of newsArticles">
+      <template v-if="idx!==0">
         <hr class="article_partition"/>
-      </div>
+      </template>
       <NewsArticle :date="newsArticle.date" :contents="newsArticle.contents" ></NewsArticle>
-    </div>
+    </template>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <div class="member_links">
-    <div v-for="link of Array.from(links).reverse()">
+    <template v-for="link of Array.from(links).reverse()">
       <a :href="link.url"><Icon :class="linkClass(link)" :icon="link.icon"></Icon></a>
-    </div>
+    </template>
   </div>
 </template>
 

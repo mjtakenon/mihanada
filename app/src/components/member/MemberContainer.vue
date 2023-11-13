@@ -1,6 +1,6 @@
 <template>
   <div class="member_container">
-    <div v-for="(member, idx) of members">
+    <template v-for="(member, idx) of members">
       <MemberContents
           :class="memberContentsClass(idx)"
           :id="member.id"
@@ -9,7 +9,7 @@
           :imagePath="member.imagePath"
           :links="member.links"
       ></MemberContents>
-    </div>
+    </template>
   </div>
 </template>
 
