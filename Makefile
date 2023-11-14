@@ -26,5 +26,5 @@ yarn-install:
 	docker compose cp frontend:/app/node_modules ./app
 yarn-run-dev:
 	docker compose exec frontend bash -c "yarn run dev"
-yarn-preview:
+preview:
 	docker compose exec frontend bash -c "yarn build && yarn preview"
