@@ -1,6 +1,6 @@
 <template>
   <div class="discography_carousel">
-    <carousel ref="carousel" :items-to-show="itemsToShow" :wrap-around="true">
+    <carousel ref="carousel" v-model="current" :items-to-show="itemsToShow" :wrap-around="true">
       <slide v-for="content in contents" :key="content.no">
         <DiscographyContents
             :no="content.no"
@@ -101,8 +101,8 @@ export default defineComponent({
     @apply pointer-events-none;
 
     .navigation_button {
-      @apply w-12 h-12;
-      @apply p-4;
+      @apply w-8 h-8 sm:w-12 sm:h-12;
+      @apply p-4 sm:p-6;
       color: color.$background;
       @apply stroke-[16px];
       stroke: color.$mihanada-dark-1;
