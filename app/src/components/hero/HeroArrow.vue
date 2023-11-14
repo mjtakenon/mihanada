@@ -38,7 +38,7 @@ export default defineComponent({
   animation: arrow_animation 1.5s linear 0s infinite ;
   @keyframes arrow_animation {
     0%{bottom:1%;}
-    50%{bottom:3%;}
+    50%{bottom:2.5%;}
     100%{bottom:1%;}
   }
 }
