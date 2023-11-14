@@ -29,6 +29,7 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue'
+import { Carousel } from 'vue3-carousel'
 import DiscographyText from "./DiscographyText.vue";
 import DiscographyContents from "./DiscographyContents.vue";
 import jacketHikoukeikakuImg from '../../../src/assets/img/jacket_hikoukeikaku.png'
@@ -48,14 +49,15 @@ export default defineComponent({
       this.itemsToShow = Math.min((window.innerWidth-330)/(1280-330)*2.3 + 1.2, 3.5)
     },
     next() {
-      this.$refs.carousel.next()
+      (this.$refs.carousel as typeof Carousel).next()
     },
     prev() {
-      this.$refs.carousel.prev()
+      (this.$refs.carousel as typeof Carousel).prev()
     },
   },
   data() {
     return {
+      current: [],
       itemsToShow: 3.5,
       contents: [
         {
