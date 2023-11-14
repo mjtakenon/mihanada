@@ -1,6 +1,6 @@
 <template>
   <div class="discography_carousel">
-    <carousel :items-to-show="itemsToShow" :wrap-around="true">
+    <carousel ref="carousel" :items-to-show="itemsToShow" :wrap-around="true">
       <slide v-for="content in contents" :key="content.no">
         <DiscographyContents
             :no="content.no"
@@ -13,10 +13,17 @@
       </slide>
 
       <template #addons>
-        <navigation />
         <pagination />
       </template>
     </carousel>
+    <div class="carousel_navigation">
+      <button class="left">
+        <font-awesome-icon @click="prev" class="navigation_button" :icon="['fas', 'circle-arrow-left']" />
+      </button>
+      <button class="right">
+        <font-awesome-icon @click="next" class="navigation_button" :icon="['fas', 'circle-arrow-right']" />
+      </button>
+    </div>
   </div>
 </template>
 
@@ -39,7 +46,13 @@ export default defineComponent({
   methods: {
     updateItemsToShow() {
       this.itemsToShow = Math.min((window.innerWidth-330)/(1280-330)*2.3 + 1.2, 3.5)
-    }
+    },
+    next() {
+      this.$refs.carousel.next()
+    },
+    prev() {
+      this.$refs.carousel.prev()
+    },
   },
   data() {
     return {
@@ -77,17 +90,26 @@ export default defineComponent({
 <style scoped lang="scss">
 @use "../../styles/color";
 
-.joint_parallelogram {
-  @apply w-full h-16 sm:h-24 xl:h-32;
-  background-color: color.$mihanada-dark-0;
-  clip-path: polygon(0 0, 100% 65%, 100% 100%, 0 35%);
-}
+.discography_carousel {
+  @apply relative;
 
-.joint_triangle {
-  @apply absolute;
-  @apply w-full h-16 sm:h-24 xl:h-32;
-  background-color: color.$mihanada;
-  clip-path: polygon(0 0, 100% 65%, 100% 0);
+  .carousel_navigation {
+    @apply absolute flex;
+    @apply w-full h-full;
+    @apply top-0;
+    @apply flex-wrap justify-between;
+    @apply pointer-events-none;
+
+    .navigation_button {
+      @apply w-12 h-12;
+      @apply p-4;
+      color: color.$background;
+      @apply stroke-[16px];
+      stroke: color.$mihanada-dark-1;
+      filter: drop-shadow(2px 2px 3px color.$text-gray);
+      @apply pointer-events-auto;
+    }
+  }
 }
 
 </style>
