@@ -34,6 +34,13 @@ export default defineComponent({
   @apply w-4/5 md:w-2/5 max-h-[50lvh] absolute;
 
   @apply left-[10lvw] md:left-[30lvw] bottom-[5lvh] sm:bottom-[4lvh] md:bottom-[2lvh];
+
+  animation: arrow_animation 1.5s linear 0s infinite ;
+  @keyframes arrow_animation {
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+    100%{bottom:1%;}
+  }
 }
 
 .arrow_text {
