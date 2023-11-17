@@ -41,7 +41,7 @@ footer {
 
 .copyright {
   @apply absolute;
-  @apply p-3 sm:pl-8 sm:pb-4 xl:pl-16;
+  @apply p-5 sm:pb-6 sm:pl-8 sm:pb-5 xl:pl-16;
   @apply bottom-0;
   @apply text-xs sm:text-base;
   color: color.$background;

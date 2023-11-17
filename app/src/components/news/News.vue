@@ -1,5 +1,5 @@
 <template>
-  <div class="news">
+  <div id="news">
     <NewsContainer></NewsContainer>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default defineComponent({
 <style scoped lang="scss">
 @use "../../styles/color";
 
-.news {
+#news {
   @apply flex justify-center;
   background-color: color.$mihanada;
 }

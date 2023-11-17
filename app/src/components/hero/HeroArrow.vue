@@ -1,16 +1,18 @@
 <template>
   <div class="hero_arrow">
-    <div class="arrow_container">
-      <div>
-        <span class="arrow_text">scroll</span>
+    <a href="#" v-scroll-to="'#news'" >
+      <div class="arrow_container">
+        <div>
+          <span class="arrow_text">scroll</span>
+        </div>
+        <div>
+          <svg class="arrow_icon" width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.6325 54.3824L6.58276 30.3327L10.0179 26.8963L30.6325 47.5109L51.2458 26.8963L54.6822 30.3327L30.6325 54.3824Z"/>
+            <path d="M30.6325 35.7976L6.58276 11.7479L10.0179 8.31149L30.6325 28.9261L51.2458 8.31149L54.6822 11.7479L30.6325 35.7976Z"/>
+          </svg>
+        </div>
       </div>
-      <div>
-        <svg class="arrow_icon" width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30.6325 54.3824L6.58276 30.3327L10.0179 26.8963L30.6325 47.5109L51.2458 26.8963L54.6822 30.3327L30.6325 54.3824Z"/>
-          <path d="M30.6325 35.7976L6.58276 11.7479L10.0179 8.31149L30.6325 28.9261L51.2458 8.31149L54.6822 11.7479L30.6325 35.7976Z"/>
-        </svg>
-      </div>
-    </div>
+    </a>
   </div>
 </template>
 

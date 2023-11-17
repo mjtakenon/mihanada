@@ -1,5 +1,5 @@
 <template>
-  <div class="discography">
+  <div id="discography">
     <DiscographyJoint></DiscographyJoint>
     <DiscographyText></DiscographyText>
     <DiscographyCarousel></DiscographyCarousel>
@@ -22,7 +22,7 @@ export default defineComponent({
 <style scoped lang="scss">
 @use "../../styles/color";
 
-.discography {
+#discography {
   background-color: color.$mihanada-dark-1;
 }
 

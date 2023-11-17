@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div id="hero">
     <HeroVideo></HeroVideo>
     <HeroLogo></HeroLogo>
     <HeroArrow></HeroArrow>
@@ -26,7 +26,7 @@ export default defineComponent({
 <style scoped lang="scss">
 @use "../../styles/color";
 
-.hero {
+#hero {
   background-color: color.$mihanada;
 }
 

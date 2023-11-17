@@ -1,5 +1,5 @@
 <template>
-  <div class="member">
+  <div id="member">
     <MemberJoint></MemberJoint>
     <MemberText></MemberText>
     <MemberContainer></MemberContainer>
@@ -22,6 +22,6 @@ export default defineComponent({
 <style scoped lang="scss">
 @use "../../styles/color";
 
-.member {
+#member {
 }
 </style>

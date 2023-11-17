@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { Icon } from '@iconify/vue'
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import VueScrollTo from 'vue-scrollto'
 
 library.add(fas, far, fab)
 
@@ -19,5 +20,6 @@ app.component('carousel', Carousel)
 app.component('slide', Slide)
 app.component('pagination', Pagination)
 app.component('navigation', Navigation)
+app.use(VueScrollTo);
 
 app.mount('#app')
