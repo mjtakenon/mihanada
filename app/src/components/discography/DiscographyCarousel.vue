@@ -61,7 +61,10 @@ export default defineComponent({
       itemsToShow: 3.5,
       contents: [
         {
-          no: 4, title: "花髪のロラ", description: "人は花に魅せられる話。", imagePath: jacketLoraImg, eventName: "THE VOC@LOiD M@STER53", links: []
+          no: 4, title: "花髪のロラ", description: "人は花に魅せられる話。", imagePath: jacketLoraImg, eventName: "THE VOC@LOiD M@STER53", links: [
+            { icon: "mdi:youtube", url: "https://youtu.be/qHDPo9wofus" },
+            { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm43034832" },
+          ]
         }, {
           no: 3, title: "夜明け、駅前。", description: "駅前で待つ朝の話。", imagePath: jacketYoakeekimaeImg, eventName: "M3-2022秋", links: [
             { icon: "mdi:youtube", url: "https://youtu.be/l61YwjHrTIM" },
