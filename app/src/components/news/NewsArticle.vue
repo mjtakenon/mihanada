@@ -1,31 +1,33 @@
 <template>
   <div class="news_article">
     <div class="news_date">
-      {{ date.toLocaleDateString('ja-jp', {year: "numeric", month: "2-digit", day: "2-digit"}).replace(/\//g,".") }}
+      {{ newsArticle.date.toLocaleDateString('ja-jp', {year: "numeric", month: "2-digit", day: "2-digit"}).replace(/\//g,".") }}
     </div>
     <div class="news_contents">
-      {{ contents }}
+      <NewsContents :news-contents="newsArticle.contents"></NewsContents>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue'
+import {defineComponent, PropType} from 'vue'
+import {NewsArticle} from "../../scripts/entity/NewsArticle.ts";
+import NewsContents from "./NewsContents.vue";
 
 export default defineComponent({
-  components: {},
+  components: {NewsContents},
   setup() {},
   computed: {},
   props: {
-    date: {
+    newsArticle: {
       require: true,
-      default: new Date(),
-      type: Date,
-    },
-    contents: {
-      require: true,
-      default: "",
-      type: String,
+      default: {
+        date: new Date(),
+        contents: [{
+          text: "",
+        }],
+      },
+      type: Object as PropType<NewsArticle>
     }
   },
 })

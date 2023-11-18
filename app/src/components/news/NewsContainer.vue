@@ -6,7 +6,7 @@
       <template v-if="idx!==0">
         <hr class="article_partition"/>
       </template>
-      <NewsArticle :date="newsArticle.date" :contents="newsArticle.contents" ></NewsArticle>
+      <NewsArticle :news-article="newsArticle" ></NewsArticle>
     </template>
   </div>
 </template>
@@ -18,14 +18,32 @@ import NewsArticle from "./NewsArticle.vue";
 
 export default defineComponent({
   components: {NewsArticle, NewsText},
-  setup() {
-  },
+  setup() {},
   computed: {},
   data() {
     return {
       newsArticles: [
-        { date: new Date("2023/11/12"), contents: "THE VOC@LOiD M@STER53に参加します！新譜「花髪のロラ」頒布予定です。スペースE44でお待ちしています！" },
-        { date: new Date("2023/11/12"), contents: "公式サイトを作成しました！" },
+        {
+          date: new Date("2023/11/17"),
+          contents: [
+            {
+              text: "THE VOC@LOiD M@STER53",
+              link: "https://ketto.com/tvm/",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: "に参加します！新譜「花髪のロラ」頒布予定です。スペースE44でお待ちしています！",
+            }
+          ],
+        },
+        {
+          date: new Date("2023/11/17"),
+          contents: [
+            {
+              text: "サイトを公開しました！"
+            },
+          ],
+        },
       ]
     }
   }
