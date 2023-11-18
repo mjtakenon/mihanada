@@ -24,6 +24,30 @@ export default defineComponent({
     return {
       newsArticles: [
         {
+          date: new Date("2023/11/18"),
+          contents: [
+            {
+              text: "「花髪のロラ」クロスフェード動画を公開しました！（",
+            },
+            {
+              text: "YouTube",
+              link: "https://www.youtube.com/watch?v=qHDPo9wofus",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: " / ",
+            },
+            {
+              text: "ニコニコ動画",
+              link: "https://www.nicovideo.jp/watch/sm43034832",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: "）",
+            },
+          ],
+        },
+        {
           date: new Date("2023/11/17"),
           contents: [
             {

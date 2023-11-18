@@ -3,7 +3,7 @@
       <a v-if="newsContent.link !== undefined" :href="newsContent.link" :class="newsContent.style">
         {{ newsContent.text }}
       </a>
-    <span v-else :style="newsContent.style">
+    <span v-else :class="newsContent.style">
       {{ newsContent.text }}
     </span>
   </template>
