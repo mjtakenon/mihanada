@@ -57,7 +57,7 @@ export default defineComponent({
 }
 
 .name {
-  @apply text-2xl sm:text-4xl xl:text-5xl;
+  @apply text-xl sm:text-3xl xl:text-4xl;
   @apply mb-1;
   color: color.$mihanada;
 }

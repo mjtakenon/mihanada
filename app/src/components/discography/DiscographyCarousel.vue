@@ -37,6 +37,7 @@ import jacketSetsuroImg from '../../../src/assets/img/jacket_setsuro.png'
 import jacketLanternImg from '../../../src/assets/img/jacket_lantern.png'
 import jacketYoakeekimaeImg from '../../../src/assets/img/jacket_yoakeekimae.png'
 import jacketLoraImg from '../../../src/assets/img/jacket_lora.png'
+import jacketArihureruImg from '../../../src/assets/img/jacket_arihureru.png'
 
 export default defineComponent({
   components: { DiscographyContents, DiscographyText },
@@ -61,6 +62,9 @@ export default defineComponent({
       itemsToShow: 3.5,
       contents: [
         {
+          no: 5, title: "ありふれる", description: "", imagePath: jacketArihureruImg, eventName: "M3-2025秋", links: [
+          ]
+        },{
           no: 4, title: "花髪のロラ", description: "人は花に魅せられる話。", imagePath: jacketLoraImg, eventName: "THE VOC@LOiD M@STER53", links: [
             { icon: "mdi:youtube", url: "https://youtu.be/qHDPo9wofus" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm43034832" },
