@@ -24,6 +24,19 @@ export default defineComponent({
     return {
       newsArticles: [
         {
+          date: new Date("2025/10/20"),
+          contents: [
+            {
+              text: "M3-2025秋",
+              link: "https://www.m3net.jp/",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: "に参加します！新譜「ありふれる」頒布予定です。スペースでク-31zでお待ちしています！",
+            }
+          ],
+        },
+        {
           date: new Date("2023/11/18"),
           contents: [
             {

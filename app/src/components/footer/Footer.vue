@@ -2,7 +2,7 @@
   <footer>
     <div class="circle_1"></div>
     <div class="circle_2"></div>
-    <div class="copyright">&copy; 2023 Mihanada </div>
+    <div class="copyright">&copy; 2025 Mihanada </div>
     <FooterLinks
       class="links"
       :links="links"

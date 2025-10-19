@@ -42,9 +42,9 @@ export default defineComponent({
           ]
         },
         {
-          id: "@SND_50Y0", name: "SND", bio: "歌詞書いてます。", imagePath: memberSndImg, links: [
-            { icon: "simple-icons:x", url: "https://twitter.com/SND_50Y0" },
-            { icon: "mdi:twitch", url: "https://www.twitch.tv/inubeco"},
+          id: "@BakikoW", name: "和田 刃牙子", bio: "歌詞書いてます。", imagePath: memberSndImg, links: [
+            { icon: "simple-icons:x", url: "https://twitter.com/BakikoW" },
+            { icon: "mdi:twitch", url: "https://www.twitch.tv/wadabakiko"},
           ]
         },
       ]
