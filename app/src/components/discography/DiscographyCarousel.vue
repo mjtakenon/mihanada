@@ -63,27 +63,29 @@ export default defineComponent({
       contents: [
         {
           no: 5, title: "ありふれる", description: "", imagePath: jacketArihureruImg, eventName: "M3-2025秋", links: [
+            { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=2dknkf_W2d8" },
+            { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm45538849" },
           ]
         },{
           no: 4, title: "花髪のロラ", description: "人は花に魅せられる話。", imagePath: jacketLoraImg, eventName: "THE VOC@LOiD M@STER53", links: [
-            { icon: "mdi:youtube", url: "https://youtu.be/qHDPo9wofus" },
+            { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=qHDPo9wofus" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm43034832" },
           ]
         }, {
           no: 3, title: "夜明け、駅前。", description: "駅前で待つ朝の話。", imagePath: jacketYoakeekimaeImg, eventName: "M3-2022秋", links: [
-            { icon: "mdi:youtube", url: "https://youtu.be/l61YwjHrTIM" },
+            { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=l61YwjHrTIM" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm41297466" },
             { icon: "mdi:cart", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1684364" },
           ]
         }, {
           no: 2, title: "藍譚", description: "夏に残した燈の話。", imagePath: jacketLanternImg, eventName: "M3-2021秋", links: [
-            { icon: "mdi:youtube", url: "https://youtu.be/ACK8eofMkrs" },
+            { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=ACK8eofMkrs" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm39527910" },
             { icon: "mdi:cart", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1684364" },
           ]
         }, {
           no: 1, title: "雪狼", description: "", imagePath: jacketSetsuroImg, eventName: "M3-2020秋", links: [
-            { icon: "mdi:youtube", url: "https://youtu.be/JdW1aMtQHHE" },
+            { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=JdW1aMtQHHE" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm37711126" },
             { icon: "mdi:cart", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1684364" },
           ]
