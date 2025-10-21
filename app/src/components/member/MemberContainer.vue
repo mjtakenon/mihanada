@@ -17,7 +17,7 @@
 import {defineComponent} from 'vue'
 import MemberContents from "./MemberContents.vue";
 import memberMjtakenonImg from '../../../src/assets/img/member_mjtakenon.png'
-import memberSndImg from '../../../src/assets/img/member_snd.png'
+import memberBakikoImg from '../../../src/assets/img/member_bakiko.png'
 
 export default defineComponent({
   components: {MemberContents},
@@ -42,7 +42,7 @@ export default defineComponent({
           ]
         },
         {
-          id: "@BakikoW", name: "和田 刃牙子", bio: "歌詞書いてます。", imagePath: memberSndImg, links: [
+          id: "@BakikoW", name: "和田 刃牙子", bio: "歌詞書いてます。", imagePath: memberBakikoImg, links: [
             { icon: "simple-icons:x", url: "https://twitter.com/BakikoW" },
             { icon: "mdi:twitch", url: "https://www.twitch.tv/wadabakiko"},
           ]
