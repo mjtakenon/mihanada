@@ -24,6 +24,30 @@ export default defineComponent({
     return {
       newsArticles: [
         {
+          date: new Date("2025/10/21"),
+          contents: [
+            {
+              text: "「ありふれる」クロスフェード動画を公開しました！（",
+            },
+            {
+              text: "YouTube",
+              link: "https://www.youtube.com/watch?v=2dknkf_W2d8",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: " / ",
+            },
+            {
+              text: "ニコニコ動画",
+              link: "https://www.nicovideo.jp/watch/sm45538849",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: "）",
+            },
+          ],
+        },
+        {
           date: new Date("2025/10/20"),
           contents: [
             {
