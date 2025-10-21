@@ -70,7 +70,7 @@ export default defineComponent({
           no: 4, title: "花髪のロラ", description: "人は花に魅せられる話。", imagePath: jacketLoraImg, eventName: "THE VOC@LOiD M@STER53", links: [
             { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=qHDPo9wofus" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm43034832" },
-            { icon: "mdi:cart-arrow-down", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=2156202" },
+            { icon: "mdi:download", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=2156202" },
           ]
         }, {
           no: 3, title: "夜明け、駅前。", description: "駅前で待つ朝の話。", imagePath: jacketYoakeekimaeImg, eventName: "M3-2022秋", links: [
@@ -88,7 +88,6 @@ export default defineComponent({
           no: 1, title: "雪狼", description: "", imagePath: jacketSetsuroImg, eventName: "M3-2020秋", links: [
             { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=JdW1aMtQHHE" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm37711126" },
-            { icon: "mdi:cart", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1684364" },
           ]
         }, {
           no: 0, title: "僕らの飛行計画", description: "", imagePath: jacketHikoukeikakuImg, eventName: "M3-2019春", links: []
