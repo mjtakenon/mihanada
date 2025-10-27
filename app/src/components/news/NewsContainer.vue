@@ -27,7 +27,14 @@ export default defineComponent({
           date: new Date("2025/10/25"),
           contents: [
             {
-              text: "摩絳ゆうひ様のYouTubeチャンネルにて、楽曲提供した「夕照」のオリジナル動画を公開していただきました！（",
+              text: "摩",
+            },
+            {
+              text: "絳",
+              style: "font-medium",
+            },
+            {
+              text: "ゆうひ様のYouTubeチャンネルにて、楽曲提供した「夕照」のオリジナル動画を公開していただきました！（",
             },
             {
               text: "YouTube",
