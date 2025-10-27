@@ -24,10 +24,26 @@ export default defineComponent({
     return {
       newsArticles: [
         {
+          date: new Date("2025/10/25"),
+          contents: [
+            {
+              text: "摩絳ゆうひ様のYouTubeチャンネルにて、楽曲提供した「夕照」のオリジナル動画を公開していただきました！（",
+            },
+            {
+              text: "YouTube",
+              link: "https://www.youtube.com/watch?v=xMv7MV0nLVc",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: "）",
+            },
+          ],
+        },
+        {
           date: new Date("2025/10/21"),
           contents: [
             {
-              text: "「ありふれる」クロスフェード動画を公開しました！（",
+              text: "5th Album 「ありふれる」クロスフェード動画を公開しました！（",
             },
             {
               text: "YouTube",
@@ -64,7 +80,7 @@ export default defineComponent({
           date: new Date("2023/11/18"),
           contents: [
             {
-              text: "「花髪のロラ」クロスフェード動画を公開しました！（",
+              text: "4th Album 「花髪のロラ」クロスフェード動画を公開しました！（",
             },
             {
               text: "YouTube",
