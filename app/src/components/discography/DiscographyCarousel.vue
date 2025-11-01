@@ -65,6 +65,8 @@ export default defineComponent({
           no: 5, title: "ありふれる", description: "", imagePath: jacketArihureruImg, eventName: "M3-2025秋", links: [
             { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=2dknkf_W2d8" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm45538849" },
+            { icon: "mdi:cart", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=3296119" },
+            { icon: "mdi:download", url: "https://www.melonbooks.co.jp/detail/detail.php?product_id=3303359" },
           ]
         },{
           no: 4, title: "花髪のロラ", description: "人は花に魅せられる話。", imagePath: jacketLoraImg, eventName: "THE VOC@LOiD M@STER53", links: [
