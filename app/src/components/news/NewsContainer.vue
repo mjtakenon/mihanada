@@ -24,6 +24,14 @@ export default defineComponent({
     return {
       newsArticles: [
         {
+          date: new Date("2025/11/01"),
+          contents: [
+            {
+              text: "5th Album「ありふれる」の委託販売を開始しました！",
+            },
+          ],
+        },
+        {
           date: new Date("2025/10/25"),
           contents: [
             {
@@ -50,7 +58,7 @@ export default defineComponent({
           date: new Date("2025/10/21"),
           contents: [
             {
-              text: "5th Album 「ありふれる」クロスフェード動画を公開しました！（",
+              text: "5th Album「ありふれる」クロスフェード動画を公開しました！（",
             },
             {
               text: "YouTube",
