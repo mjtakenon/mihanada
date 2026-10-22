@@ -24,6 +24,30 @@ export default defineComponent({
     return {
       newsArticles: [
         {
+          date: new Date("2026/10/22"),
+          contents: [
+            {
+              text: "6th Album「小さな図鑑」クロスフェード動画を公開しました！（",
+            },
+            {
+              text: "YouTube",
+              link: "https://www.youtube.com/watch?v=cLpaRxbTs4k",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: " / ",
+            },
+            {
+              text: "ニコニコ動画",
+              link: "https://www.nicovideo.jp/watch/sm46948972",
+              style: "font-medium text-blue-600 dark:text-blue-500 hover:underline",
+            },
+            {
+              text: "）",
+            },
+          ],
+        },
+        {
           date: new Date("2025/11/01"),
           contents: [
             {
