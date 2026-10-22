@@ -38,6 +38,7 @@ import jacketLanternImg from '../../../src/assets/img/jacket_lantern.png'
 import jacketYoakeekimaeImg from '../../../src/assets/img/jacket_yoakeekimae.png'
 import jacketLoraImg from '../../../src/assets/img/jacket_lora.png'
 import jacketArihureruImg from '../../../src/assets/img/jacket_arihureru.png'
+import jacketChiisanazukanImg from '../../../src/assets/img/jacket_chiisanazukan.png'
 
 export default defineComponent({
   components: { DiscographyContents, DiscographyText },
@@ -62,6 +63,11 @@ export default defineComponent({
       itemsToShow: 3.5,
       contents: [
         {
+          no: 6, title: "小さな図鑑", description: "", imagePath: jacketChiisanazukanImg, eventName: "M3-2026秋", links: [
+            { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=cLpaRxbTs4k" },
+            { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm46948972" },
+          ]
+        },{
           no: 5, title: "ありふれる", description: "", imagePath: jacketArihureruImg, eventName: "M3-2025秋", links: [
             { icon: "mdi:youtube", url: "https://www.youtube.com/watch?v=2dknkf_W2d8" },
             { icon: "simple-icons:niconico", url: "https://www.nicovideo.jp/watch/sm45538849" },
